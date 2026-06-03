@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'iransans';
+  src: url('../public/IRANSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  @apply font-sans;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.card-size{
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: 350px;   /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-size img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; /* Ensure the image covers the entire card */
+  border-radius: 8px; /* Add rounded corners to the image if needed */
+}
+.bg-card-0 {
+  background-color: #3498db; /* Blue */
+}
+
+.bg-card-1 {
+  background-color: #2ecc71; /* Green */
+}
+
+.bg-card-2 {
+  background-color: #e74c3c; /* Red */
+}
+
+.bg-card-3 {
+  background-color: #f39c12; /* Orange */
+}
+
+.bg-card-4 {
+  background-color: #9b59b6; /* Purple */
+}
+
+.bg-card-5 {
+  background-color: #1abc9c; /* Turquoise */
+}
